@@ -6,11 +6,15 @@
 - Added `missingConfigFiles` to `options.disabledValidations` to optionally skip checking for the existence of config files.
 - Added ability to automatically include Carthage related dependencies via `includeRelated: true` [#506](https://github.com/yonaskolb/XcodeGen/pull/506) @rpassis
 - Added ability to define a per-platform `deploymentTarget` for Multi-Platform targets. [#510](https://github.com/yonaskolb/XcodeGen/pull/510) @ainopara
+- Added support for `app-extension.intents-service` target type [#536](https://github.com/yonaskolb/XcodeGen/pull/536) @yonaskolb
 
 #### Fixed
 - Sources outside a project spec's directory will be correctly referenced as relative paths in the project file. [#524](https://github.com/yonaskolb/XcodeGen/pull/524)
 - Fixed error when `optional` path is missing [#527](https://github.com/yonaskolb/XcodeGen/pull/527) @yonaskolb
 - Fixed excludes within included spec [#535](https://github.com/yonaskolb/XcodeGen/pull/535) @yonaskolb
+
+#### Changed
+- Updated to xcodeproj 6.6 which includes project writing performance improvements [#536](https://github.com/yonaskolb/XcodeGen/pull/536) @yonaskolb
 
 ## 2.2.0
 
